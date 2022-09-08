@@ -1,0 +1,2 @@
+module HotelgroupsHelper
+end

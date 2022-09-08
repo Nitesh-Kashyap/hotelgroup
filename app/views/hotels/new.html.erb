@@ -1,0 +1,10 @@
+<h3>Create a Hotel</h3>
+<%= form_with model: @hotel do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @hotel do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.submit %>
+<% end %> -->

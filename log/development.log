@@ -1,0 +1,1283 @@
+Started GET "/" for ::1 at 2022-09-07 21:29:08 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 849)
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 7787)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:29:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (17.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHotels (20220907160035)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "hotels" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220907160035"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-07 16:00:46.640364"], ["updated_at", "2022-09-07 16:00:46.640364"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHotel Create (0.4ms)[0m  [1m[32mINSERT INTO "hotels" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "natraj"], ["created_at", "2022-09-07 16:07:52.855698"], ["updated_at", "2022-09-07 16:07:52.855698"]]
+  [1m[36mTRANSACTION (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+Started GET "/hotels" for ::1 at 2022-09-07 21:42:21 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 5641)
+  Rendered layout layouts/application.html.erb (Duration: 168.8ms | Allocations: 102077)
+Completed 200 OK in 173ms (Views: 169.6ms | ActiveRecord: 0.4ms | Allocations: 108776)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:42:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1" for ::1 at 2022-09-07 21:42:28 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2659)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3084)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 21:53:02 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 5641)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 40339)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.4ms | Allocations: 47039)
+
+
+Started GET "/hotels/1" for ::1 at 2022-09-07 21:53:04 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2353)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2446)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 5495)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @dog.name %></h1>
+    2: <h4>"<%= @dog.motto %>"</h4>
+    3: <%= link_to 'Remove', @hotel, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/hotels/show.html.erb:1
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:53:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1" for ::1 at 2022-09-07 21:53:33 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3255)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3339)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 4961)
+
+
+  
+ActionView::Template::Error (undefined method `motto' for #<Hotel id: 1, name: "natraj", created_at: "2022-09-07 16:07:52.855698000 +0000", updated_at: "2022-09-07 16:07:52.855698000 +0000">):
+    1: <h1><%= @hotel.name %></h1>
+    2: <h4>"<%= @hotel.motto %>"</h4>
+    3: <%= link_to 'Remove', @hotel, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/hotels/show.html.erb:2
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:53:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1" for ::1 at 2022-09-07 21:53:49 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 374)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3186)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 4850)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:53:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels" for ::1 at 2022-09-07 21:54:04 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 797)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3160)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 3566)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:54:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/create" for ::1 at 2022-09-07 21:54:15 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 931)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hotel with 'id'=create):
+  
+app/controllers/hotels_controller.rb:7:in `show'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:54:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 21:54:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/" for ::1 at 2022-09-07 22:01:23 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 744)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 6531)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:01:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:01:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels" for ::1 at 2022-09-07 22:01:36 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5996)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 40894)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.5ms | Allocations: 42925)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:01:38 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/new" for ::1 at 2022-09-07 22:01:39 +0530
+Processing by HotelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/new.html.erb within layouts/application
+  Rendered hotels/new.html.erb within layouts/application (Duration: 24.6ms | Allocations: 4407)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 6611)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 7069)
+
+
+Started GET "/" for ::1 at 2022-09-07 22:29:45 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 744)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 6531)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:29:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:29:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels" for ::1 at 2022-09-07 22:29:54 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.3ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 5994)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 40860)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.8ms | Allocations: 42891)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:29:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:29:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:29:56 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.2ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2896)
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 5980)
+
+
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:29:59 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2455)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3250)
+
+
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:30:01 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2449)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3228)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:30:06 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1102)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3289)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3623)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:30:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/new" for ::1 at 2022-09-07 22:30:09 +0530
+Processing by HotelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/new.html.erb within layouts/application
+  Rendered hotels/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2710)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4897)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
+Started POST "/hotels" for ::1 at 2022-09-07 22:30:17 +0530
+Processing by HotelsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotel"=>{"name"=>"Cemer"}, "commit"=>"Create Hotel"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+  [1m[36mHotel Create (0.2ms)[0m  [1m[32mINSERT INTO "hotels" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Cemer"], ["created_at", "2022-09-07 17:00:17.238238"], ["updated_at", "2022-09-07 17:00:17.238238"]]
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+Redirected to http://localhost:3000/hotels/2
+Completed 302 Found in 7ms (ActiveRecord: 4.2ms | Allocations: 3405)
+
+
+Started GET "/hotels/2" for ::1 at 2022-09-07 22:30:17 +0530
+Processing by HotelsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2586)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 3476)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:30:23 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1459)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3647)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 3982)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:30:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1/edit" for ::1 at 2022-09-07 22:30:25 +0530
+Processing by HotelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/edit.html.erb within layouts/application
+  Rendered hotels/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 941)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3120)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 3951)
+
+
+Started PATCH "/hotels/1" for ::1 at 2022-09-07 22:30:32 +0530
+Processing by HotelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotel"=>{"name"=>"natraj12"}, "commit"=>"Update Hotel", "id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+  [1m[36mHotel Update (0.1ms)[0m  [1m[33mUPDATE "hotels" SET "name" = ?, "updated_at" = ? WHERE "hotels"."id" = ?[0m  [["name", "natraj12"], ["updated_at", "2022-09-07 17:00:32.866729"], ["id", 1]]
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+Redirected to http://localhost:3000/hotels/1
+Completed 302 Found in 14ms (ActiveRecord: 10.1ms | Allocations: 2760)
+
+
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:30:32 +0530
+Processing by HotelsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2447)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3228)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:30:39 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3611)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3944)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:30:41 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started DELETE "/hotels/2" for ::1 at 2022-09-07 22:30:41 +0530
+Processing by HotelsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+  [1m[36mHotel Destroy (0.1ms)[0m  [1m[31mDELETE FROM "hotels" WHERE "hotels"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 19ms (ActiveRecord: 15.3ms | Allocations: 2278)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:30:41 +0530
+Processing by HotelsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1080)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3283)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3623)
+
+
+Started GET "/hotels/new" for ::1 at 2022-09-07 22:30:43 +0530
+Processing by HotelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/new.html.erb within layouts/application
+  Rendered hotels/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3270)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3608)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:31:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels" for ::1 at 2022-09-07 22:34:29 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 6485)
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 41414)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.4ms | Allocations: 48134)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:34:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/new" for ::1 at 2022-09-07 22:34:32 +0530
+Processing by HotelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/new.html.erb within layouts/application
+  Rendered hotels/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2821)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5113)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 5594)
+
+
+Started POST "/hotels" for ::1 at 2022-09-07 22:34:39 +0530
+Processing by HotelsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotel"=>{"name"=>"Nitesh"}, "commit"=>"Create Hotel"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+  [1m[36mHotel Create (0.2ms)[0m  [1m[32mINSERT INTO "hotels" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nitesh"], ["created_at", "2022-09-07 17:04:39.094058"], ["updated_at", "2022-09-07 17:04:39.094058"]]
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+  [1m[36mTRANSACTION (34.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:18:in `create'
+Redirected to http://localhost:3000/hotels/3
+Completed 302 Found in 38ms (ActiveRecord: 34.2ms | Allocations: 3522)
+
+
+Started GET "/hotels/3" for ::1 at 2022-09-07 22:34:39 +0530
+Processing by HotelsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2850)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 5893)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:34:44 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1447)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3636)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3982)
+
+
+Started GET "/hotels/1/edit" for ::1 at 2022-09-07 22:34:46 +0530
+Processing by HotelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/edit.html.erb within layouts/application
+  Rendered hotels/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 964)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3143)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 3978)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:34:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started PATCH "/hotels/1" for ::1 at 2022-09-07 22:34:49 +0530
+Processing by HotelsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotel"=>{"name"=>"natraj"}, "commit"=>"Update Hotel", "id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+  [1m[36mHotel Update (0.1ms)[0m  [1m[33mUPDATE "hotels" SET "name" = ?, "updated_at" = ? WHERE "hotels"."id" = ?[0m  [["name", "natraj"], ["updated_at", "2022-09-07 17:04:49.521148"], ["id", 1]]
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:28:in `update'
+Redirected to http://localhost:3000/hotels/1
+Completed 302 Found in 14ms (ActiveRecord: 8.9ms | Allocations: 2853)
+
+
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:34:49 +0530
+Processing by HotelsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2459)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3240)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:34:53 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1434)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3621)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3954)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:34:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels/1" for ::1 at 2022-09-07 22:34:57 +0530
+Processing by HotelsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/show.html.erb within layouts/application
+  Rendered hotels/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2473)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3263)
+
+
+Started DELETE "/hotels/1" for ::1 at 2022-09-07 22:35:00 +0530
+Processing by HotelsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hotels_controller.rb:46:in `current_hotel'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+  [1m[36mHotel Destroy (0.1ms)[0m  [1m[31mDELETE FROM "hotels" WHERE "hotels"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/hotels_controller.rb:34:in `destroy'
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 19ms (ActiveRecord: 15.1ms | Allocations: 2273)
+
+
+Started GET "/hotels" for ::1 at 2022-09-07 22:35:00 +0530
+Processing by HotelsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.1ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1076)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3263)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 3602)
+
+
+Started GET "/hotels/new" for ::1 at 2022-09-07 22:35:02 +0530
+Processing by HotelsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/new.html.erb within layouts/application
+  Rendered hotels/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1085)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3272)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3613)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 22:35:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHotelGroups (20220907173254)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hotel_groups" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220907173254"]]
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-09-07 23:11:46 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nitesh/.rvm/gems/ruby-3.0.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 744)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 6555)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:11:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotels" for ::1 at 2022-09-07 23:11:50 +0530
+Processing by HotelsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotels/index.html.erb within layouts/application
+  [1m[36mHotel Load (0.3ms)[0m  [1m[34mSELECT "hotels".* FROM "hotels"[0m
+  ↳ app/views/hotels/index.html.erb:2
+  Rendered hotels/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5559)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 40335)
+Completed 200 OK in 84ms (Views: 36.2ms | ActiveRecord: 0.9ms | Allocations: 44739)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:11:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:11:55 +0530
+Processing by HotelGroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotel_groups/index.html.erb within layouts/application
+  Rendered hotel_groups/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1334)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 4498)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table>
+  <% @hotel_groups search do |hotel| %>
+    <tr>
+      <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+      <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+      <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+):
+1:    <table>
+2:      <% @hotel_groups search do |hotel| %>
+3:        <tr>
+4:          <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+5:          <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+6:          <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+7:      <% end %>
+8:    </table>
+9:    <%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+  
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:11:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:12:27 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:13:40 +0530
+Processing by HotelGroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotel_groups/index.html.erb within layouts/application
+  Rendered hotel_groups/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1234)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1319)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2445)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table>
+  <% @hotel_groups search do |hotel_group| %>
+    <tr>
+      <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+      <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+      <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+):
+1:    <table>
+2:      <% @hotel_groups search do |hotel_group| %>
+3:        <tr>
+4:          <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+5:          <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+6:          <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+7:      <% end %>
+8:    </table>
+9:    <%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+  
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:13:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:13:53 +0530
+Processing by HotelGroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotel_groups/index.html.erb within layouts/application
+  Rendered hotel_groups/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1188)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1267)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1586)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table>
+  <% @hotel_groups search do |hotel_group| %>
+    <tr>
+      <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+      <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+      <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+):
+1:    <table>
+2:      <% @hotel_groups search do |hotel_group| %>
+3:        <tr>
+4:          <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+5:          <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+6:          <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+7:      <% end %>
+8:    </table>
+9:    <%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+  
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:13:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:14:15 +0530
+Processing by HotelGroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotel_groups/index.html.erb within layouts/application
+  Rendered hotel_groups/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1238)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1323)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2428)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <table>
+  <% @hotel_groups search do |hotelgroup| %>
+    <tr>
+      <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+      <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+      <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+):
+1:    <table>
+2:      <% @hotel_groups search do |hotelgroup| %>
+3:        <tr>
+4:          <td><%= link_to hotel_group.name, hotel_group_path(hotel_group) %></td>
+5:          <td><%= button_to 'Edit', edit_hotel_group_path(hotel_group), method: 'get'%></td>
+6:          <td><%= button_to 'Remove', hotel_group_path(hotel_group), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+7:      <% end %>
+8:    </table>
+9:    <%= link_to "Add a New HotelGroup", new_hotel_group_path %>
+  
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+app/views/hotel_groups/index.html.erb:2: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:14:17 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:14:46 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHotelGroups (20220907173254)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "hotel_groups"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20220907173254"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:24:51 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220907174602_create_hotelgroups.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:24:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220907174602_create_hotelgroups.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHotelgroups (20220907174602)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "hotelgroups" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220907174602"]]
+  [1m[36mTRANSACTION (42.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/hotel_groups" for ::1 at 2022-09-07 23:25:14 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant HotelGroupsController
+Did you mean?  HotelgroupsController
+               HotelsController):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:25:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:25:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/hotelgroups"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:25:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:25:55 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1437)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 36702)
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 0.1ms | Allocations: 45310)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:25:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups/new" for ::1 at 2022-09-07 23:25:58 +0530
+Processing by HotelgroupsController#new as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.8ms | Allocations: 4140)
+
+
+  
+ActionController::MissingExactTemplate (HotelgroupsController#new is missing a template for request formats: text/html):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.3.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.3.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.3.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:26:04 +0530
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 633)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3164)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3541)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:26:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:26:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:32:46 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1437)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 36770)
+Completed 200 OK in 38ms (Views: 32.1ms | ActiveRecord: 0.1ms | Allocations: 45358)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:32:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:32:48 +0530
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 645)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3168)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 3554)
+
+
+Started GET "/hotelgroups/new" for ::1 at 2022-09-07 23:32:49 +0530
+Processing by HotelgroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/new.html.erb within layouts/application
+  Rendered hotelgroups/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2448)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 4750)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 8547)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:32:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/hotelgroups" for ::1 at 2022-09-07 23:32:55 +0530
+Processing by HotelgroupsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotelgroup"=>{"name"=>"nitesh"}, "commit"=>"Create Hotelgroup"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3708)
+
+
+  
+NameError (undefined local variable or method `hotel_params' for #<HotelgroupsController:0x0000000000c0f8>
+Did you mean?  hotelgroup_params):
+  
+app/controllers/hotelgroups_controller.rb:15:in `create'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:33:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups/new" for ::1 at 2022-09-07 23:33:27 +0530
+Processing by HotelgroupsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/hotelgroups_controller.rb:11:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/new.html.erb within layouts/application
+  Rendered hotelgroups/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 971)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 14703)
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.8ms | Allocations: 18873)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:33:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/hotelgroups" for ::1 at 2022-09-07 23:33:30 +0530
+Processing by HotelgroupsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotelgroup"=>{"name"=>"nitesh"}, "commit"=>"Create Hotelgroup"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 945)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Hotelgroup.):
+  
+app/controllers/hotelgroups_controller.rb:15:in `create'
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:33:35 +0530
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.2ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 677)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3055)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 3463)
+
+
+Started GET "/hotelgroups" for ::1 at 2022-09-07 23:33:35 +0530
+Processing by HotelgroupsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/index.html.erb within layouts/application
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  ↳ app/views/hotelgroups/index.html.erb:2
+  Rendered hotelgroups/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 551)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2907)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 3239)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:33:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups/new" for ::1 at 2022-09-07 23:33:45 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HotelgroupsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/new.html.erb within layouts/application
+  Rendered hotelgroups/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3244)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 37772)
+Completed 200 OK in 40ms (Views: 31.9ms | ActiveRecord: 0.3ms | Allocations: 49653)
+
+
+Started POST "/hotelgroups" for ::1 at 2022-09-07 23:33:51 +0530
+Processing by HotelgroupsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotelgroup"=>{"name"=>"ugfudg"}, "commit"=>"Create Hotelgroup"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1048)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Hotelgroup.):
+  
+app/controllers/hotelgroups_controller.rb:15:in `create'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:34:22 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started GET "/hotelgroups/new" for ::1 at 2022-09-07 23:34:35 +0530
+Processing by HotelgroupsController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/hotelgroups_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering hotelgroups/new.html.erb within layouts/application
+  Rendered hotelgroups/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 959)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 14693)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 18939)
+
+
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:34:37 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+Started POST "/hotelgroups" for ::1 at 2022-09-07 23:34:39 +0530
+Processing by HotelgroupsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "hotelgroup"=>{"name"=>"juhdu"}, "commit"=>"Create Hotelgroup"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 870)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Hotelgroup.):
+  
+app/controllers/hotelgroups_controller.rb:17:in `create'
+Started GET "/service-worker.js" for ::1 at 2022-09-07 23:35:10 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mHotelgroup Load (0.1ms)[0m  [1m[34mSELECT "hotelgroups".* FROM "hotelgroups"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Hotelgroup (20220907181854)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220907181854"]]
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
